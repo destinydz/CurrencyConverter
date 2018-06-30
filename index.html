@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Currency Converter</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary ">
+        <h1 style="color:#fff;margin: 0 auto;">Currency Converter</h1>
+    </nav>
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <form id="currency-form">
+                    <div class="form-group">
+                        <label for="from_currency">Currency</label>
+                        <select id="from_currency" class="form-control">
+
+                        </select>
+                        <label for="from_amount">Amount:</label>
+                        <input type="text" class="form-control" id="from_amount" value="1">
+                        <small id="textHelp" class="form-text text-muted">Enter the amount.</small>
+
+                    </div>
+
+                    <div class="form-group">
+                        <h5>Currency To</h5>
+                        <select id="to_currency" class="form-control">
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Convert</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="to_amount">Amount:</label>
+                        <input type="text" class="form-control" id="to_amount" style="background-color: #1db75b; color:white;" readonly>
+                    </div>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-copyright text-center py-3">#7DaysOfCodeChallenge
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
